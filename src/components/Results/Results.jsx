@@ -2,7 +2,6 @@ import { formatter } from "../../util/investment"
 import './Results.css'
 
 export default function Results({data}){
-    const rows = [];
     const initialInvestment = data.length > 0 ? 
         (data[0].valueEndOfYear - data[0].interest - data[0].annualInvestment):0;
     return<>
